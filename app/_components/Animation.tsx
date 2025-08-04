@@ -24,7 +24,7 @@ export default function Animation() {
           ))}
         </div>
 
-        <button className="mt-12 w-full md:w-auto justify-center md:mb-60 bg-[#9B7A51] group hover:bg-white hover:text-[#9B7A51] border border-transparent hover:border-[#9B7A51] transition duration-300 text-3xl rounded-full px-10 py-3 text-white flex items-center gap-5">
+        <button className="mt-12 justify-center md:mb-60 bg-[#9B7A51] group hover:bg-white hover:text-[#9B7A51] border border-transparent hover:border-[#9B7A51] transition duration-300 text-lg md:text-3xl rounded-full px-10 py-3 text-white flex items-center gap-5">
           View All Projects
           <svg width="30" height="15" viewBox="0 0 30 15" className="fill-white group-hover:fill-[#9B7A51] transition duration-300" fill="none">
             <path d="M29.1505 8.20711C29.5411 7.81658 29.5411 7.18342 29.1505 6.79289L22.7866 0.428932C22.3961 0.0384078 21.7629 0.0384078 21.3724 0.428932C20.9818 0.819457 20.9818 1.45262 21.3724 1.84315L27.0292 7.5L21.3724 13.1569C20.9818 13.5474 20.9818 14.1805 21.3724 14.5711C21.7629 14.9616 22.3961 14.9616 22.7866 14.5711L29.1505 8.20711ZM0.550781 7.5V8.5H28.4434V7.5V6.5L0.550781 6.5V7.5Z" />
