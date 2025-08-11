@@ -29,7 +29,7 @@ export default function Animation() {
             <path d="M29.1505 8.20711C29.5411 7.81658 29.5411 7.18342 29.1505 6.79289L22.7866 0.428932C22.3961 0.0384078 21.7629 0.0384078 21.3724 0.428932C20.9818 0.819457 20.9818 1.45262 21.3724 1.84315L27.0292 7.5L21.3724 13.1569C20.9818 13.5474 20.9818 14.1805 21.3724 14.5711C21.7629 14.9616 22.3961 14.9616 22.7866 14.5711L29.1505 8.20711ZM0.550781 7.5V8.5H28.4434V7.5V6.5L0.550781 6.5V7.5Z" />
           </svg>
         </button>
-        <div className='text-[#9B7A51] text-xl lg:text-4xl text-center gap-3 md:gap-8 flex flex-col mb-70 md:mb-100'>
+        <div className='text-[#9B7A51] text-xl lg:text-4xl text-center gap-3 md:gap-8 flex flex-col mb-100'>
           <p>We're always on the lookout for creative talents and collaborations with new clients.</p>
           <p className='font-bold'>Are you one of those?</p>
           <p className='font-bold text-3xl md:text-6xl'>Don't be a stranger!</p>
