@@ -115,7 +115,7 @@ function ServiceBlock({
         ))}
       </div>
 
-      {showLine && <div className="h-1 bg-[#DDDDDD] w-full" />}
+      {showLine && <div className="h-[1px] bg-[#DDDDDD] w-full" />}
     </div>
   );
 }
