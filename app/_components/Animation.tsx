@@ -53,10 +53,16 @@ export default function Animation() {
                 <p>info@uniqorn.studio.com</p>
               </Link>
             </div>
-            <input type="text" className='bg-[#9B7A51] rounded-full px-8 py-4 w-full shadow-xl' placeholder='Name' />
-            <input type="tel" className='bg-[#9B7A51] rounded-full px-8 py-4 w-full shadow-xl' placeholder='Phone' />
-            <input type="email" className='bg-[#9B7A51] rounded-full px-8 py-4 w-full shadow-xl' placeholder='Email' />
-            <textarea className='bg-[#9B7A51] rounded-4xl px-8 py-4 w-full h-30 lg:h-60 shadow-xl resize-none' name="" id="" placeholder='Message'></textarea>
+            <input type="text" className='bg-[#9B7A51] rounded-full px-8 py-4 w-full shadow-xl' placeholder='Name' required/>
+            <input type="tel" className='bg-[#9B7A51] rounded-full px-8 py-4 w-full shadow-xl' required
+              pattern="[0-9]*"
+              inputMode="numeric"
+              onChange={(e) => {
+                e.currentTarget.value = e.currentTarget.value.replace(/\D/g, "");
+              }}
+              placeholder='Phone' />
+            <input type="email" className='bg-[#9B7A51] rounded-full px-8 py-4 w-full shadow-xl' pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$" placeholder='Email' required/>
+            <textarea className='bg-[#9B7A51] rounded-4xl px-8 py-4 w-full h-30 lg:h-60 shadow-xl resize-none' name="" id="" placeholder='Message' required></textarea>
             <input type="submit" value="Send" className='bg-[#9B7A51] text-[#EBEBEB] border-white border font-bold rounded-full px-8 py-4 w-full shadow-xl hover:bg-[#EBEBEB] hover:text-[#9B7A51] transition-all duration-500' />
           </form>
         </div>
