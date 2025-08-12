@@ -9,7 +9,12 @@ export default function Slider() {
 
     return (
         <Swiper
-            slidesPerView={3}
+            slidesPerView={2}
+            breakpoints={{
+                768: { 
+                    slidesPerView: 3,
+                },
+            }}
             spaceBetween={20}
             modules={[Autoplay]}
             autoplay={{
@@ -20,12 +25,12 @@ export default function Slider() {
             allowTouchMove={false}
             speed={4000}
             loop={true}
-            className=" w-full bg-[#DDDDDD]"
+            className=" w-full bg-gradient-to-t from-[#DDDDDD] to-white"
         >
             {images.map((src, index) => (
                 <SwiperSlide key={index}>
                     <div
-                        className="h-[100px] md:h-[200px] lg:h-[300px] xl:h-[400px] 2xl:h-[600px] mx-10 w-full bg-cover bg-center relative"
+                        className="h-[200px] lg:h-[300px] xl:h-[400px] 2xl:h-[600px] mx-10 w-full bg-cover bg-center relative"
                         style={{ backgroundImage: `url(${src})` }}
                     >
                     </div>

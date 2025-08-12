@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 const services = [
   {
     icon: '/Service/Vector.png',
-    title: 'Logo Design, Branding & Graphic Design',
+    title: 'Logo, Branding & Graphic Design',
     desc: "Crafting an effective perception of your brand, and elevating it with an efficient visual language.",
     tags: ['Branding', 'Logo Design', 'Graphic Design', 'Company Profile Design']
   },
@@ -34,7 +34,7 @@ const services = [
 
 export default function About() {
   return (
-    <div className="px-3 md:px-8 py-6 md:pt-30 md:pb-60 flex flex-col bg-[#B7956F] bg-cover bg-no-repeat bg-[url(/AboutBack.jpg)] text-white items-center w-full overflow-hidden relative">
+    <div className="px-3 md:px-8 py-6 md:pt-30 md:pb-60 flex flex-col bg-[#B7956F] bg-cover bg-no-repeat bg-[url(/AboutBack.png)] text-white items-center w-full overflow-hidden relative">
       <div className="z-20 flex flex-col items-center gap-12 md:gap-30 w-full">
         <p className="font-bold text-sm xl:text-3xl text-center w-full xl:w-[70%]">
           A brand is more than the way it looks. We go beyond the visual and bring together all the elements needed to create meaningful brand experiences.
@@ -92,21 +92,21 @@ function ServiceBlock({
   return (
     <div
       ref={ref}
-      className={`w-full text-xl md:text-3xl flex flex-col gap-6 md:gap-20 transform transition-all duration-1000 ease-out
+      className={`w-full text-sm md:text-3xl flex flex-col gap-6 md:gap-20 transform transition-all duration-1000 ease-out
         ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}
       `}
     >
-      <div className="flex flex-col lg:flex-row items-center gap-12 md:gap-30">
-        <div className="w-full lg:w-1/2 xl:w-2/7 rounded-full flex items-center gap-6 p-6 bg-[#9B7A51] shadow-2xl">
-          <div className="w-20">
-            <Image src={icon} alt={`${title} icon`} width={1000} height={1000} />
+      <div className="flex flex-col lg:flex-row items-start gap-12 md:gap-30">
+        <div className="w-2/3 md:w-1/2 xl:w-2/7 rounded-full flex items-center gap-6 p-6 bg-[#9B7A51] shadow-2xl">
+          <div className="w-20 hidden md:flex">
+            <Image src={icon} alt={`-`} width={1000} height={1000} />
           </div>
           <p>{title}</p>
         </div>
         <div className="w-full lg:w-1/2 xl:w-5/7">{desc}</div>
       </div>
 
-      <div className="flex flex-wrap text-xs md:text-3xl gap-x-10 gap-y-5">
+      <div className="flex flex-wrap text-sm md:text-3xl gap-x-10 gap-y-5">
         {tags.map((tag, idx) => (
           <div key={idx} className="flex items-center gap-2">
             <div className="bg-white w-1 md:w-5 aspect-square rounded-full" />

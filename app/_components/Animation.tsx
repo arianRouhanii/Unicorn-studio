@@ -27,7 +27,7 @@ export default function Animation() {
         </div>
         <Swiper
           slidesPerView={1.5}
-          spaceBetween={1}
+          spaceBetween={20}
           allowTouchMove={true}
           loop={true}
           className=" w-full flex md:hidden"
@@ -40,7 +40,7 @@ export default function Animation() {
                 alt={`Poster ${i + 1}`}
                 width={1000}
                 height={1000}
-                className="w-full h-100 flex md:hidden"
+                className="w-full h-90 flex md:hidden"
               />
             </SwiperSlide>
           ))}

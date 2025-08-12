@@ -39,7 +39,7 @@ export default function Start() {
                         style={{ backgroundImage: `url(${src})` }}
                     >
                         <div
-                            className={`text-white text-6xl absolute bottom-[20%] font-bold left-[10%] transform transition-all duration-1000 ease-out
+                            className={`text-white text-4xl md:text-6xl absolute bottom-[15%] md:bottom-[20%] font-bold left-[10%] transform transition-all duration-1000 ease-out
                                 ${activeIndex === index ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}
                             `}
                         >
