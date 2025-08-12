@@ -41,9 +41,6 @@ export default function Header() {
                     >
                         &times;
                     </button>
-                    <Link href={''} className="w-40">
-                        <Image src={'/logo.png'} alt="Logo" width={1000} height={1000} />
-                    </Link>
                     {["Home", "Our work", "What we do", "The agency", "Plans", "Contact us"].map((text) => (
                         <button
                             key={text}

@@ -1,6 +1,8 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
 export default function Animation() {
   const posters = [
     '/Posters/example.png',
@@ -11,7 +13,7 @@ export default function Animation() {
     <div className="bg-[#D9D9D9]">
       <div className="px-3 md:px-8 py-12 flex flex-col items-center w-full bg-cover bg-no-repeat bg-[url(/AnimationBg.png)] overflow-hidden">
         <p className="text-[#B7956F] text-3xl md:text-6xl mb-10">Movie & Animation</p>
-        <div className="w-full flex flex-wrap justify-center gap-5">
+        <div className="w-full hidden md:flex flex-wrap justify-center gap-5">
           {posters.map((src, i) => (
             <Image
               key={i}
@@ -23,6 +25,26 @@ export default function Animation() {
             />
           ))}
         </div>
+        <Swiper
+          slidesPerView={1.5}
+          spaceBetween={1}
+          allowTouchMove={true}
+          loop={true}
+          className=" w-full flex md:hidden"
+        >
+          {posters.map((src, i) => (
+            <SwiperSlide key={i}>
+              <Image
+                key={i}
+                src={src}
+                alt={`Poster ${i + 1}`}
+                width={1000}
+                height={1000}
+                className="w-full h-100 flex md:hidden"
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
         <button className="mt-12 justify-center mb-10 md:mb-60 bg-[#9B7A51] group hover:bg-white hover:text-[#9B7A51] border border-transparent hover:border-[#9B7A51] transition duration-300 text-lg md:text-3xl rounded-full px-10 py-3 text-white flex items-center gap-5">
           View All Projects
           <svg width="30" height="15" viewBox="0 0 30 15" className="fill-white group-hover:fill-[#9B7A51] transition duration-300" fill="none">
@@ -53,7 +75,7 @@ export default function Animation() {
                 <p>info@uniqorn.studio.com</p>
               </Link>
             </div>
-            <input type="text" className='bg-[#9B7A51] rounded-full px-8 py-4 w-full shadow-xl' placeholder='Name' required/>
+            <input type="text" className='bg-[#9B7A51] rounded-full px-8 py-4 w-full shadow-xl' placeholder='Name' required />
             <input type="tel" className='bg-[#9B7A51] rounded-full px-8 py-4 w-full shadow-xl' required
               pattern="[0-9]*"
               inputMode="numeric"
@@ -61,7 +83,7 @@ export default function Animation() {
                 e.currentTarget.value = e.currentTarget.value.replace(/\D/g, "");
               }}
               placeholder='Phone' />
-            <input type="email" className='bg-[#9B7A51] rounded-full px-8 py-4 w-full shadow-xl' pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$" placeholder='Email' required/>
+            <input type="email" className='bg-[#9B7A51] rounded-full px-8 py-4 w-full shadow-xl' pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$" placeholder='Email' required />
             <textarea className='bg-[#9B7A51] rounded-4xl px-8 py-4 w-full h-30 lg:h-60 shadow-xl resize-none' name="" id="" placeholder='Message' required></textarea>
             <input type="submit" value="Send" className='bg-[#9B7A51] text-[#EBEBEB] border-white border font-bold rounded-full px-8 py-4 w-full shadow-xl hover:bg-[#EBEBEB] hover:text-[#9B7A51] transition-all duration-500' />
           </form>
