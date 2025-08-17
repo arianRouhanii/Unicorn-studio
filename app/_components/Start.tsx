@@ -16,7 +16,8 @@ export default function Start() {
         '/Start/Start3.jpg',
         '/Start/Start4.jpg',
         '/Start/Start5.jpg',
-        '/Start/Start6.jpg'
+        '/Start/Start6.jpg',
+        '/Start/Start7.jpg'
     ]
 
     return (

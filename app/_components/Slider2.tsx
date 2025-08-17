@@ -5,7 +5,7 @@ import { Autoplay } from 'swiper/modules'
 import 'swiper/css'
 
 export default function Slider2() {
-    const images = ['/Slider2/Slide1.jpg', '/Slider2/Slide2.jpg', '/Slider2/Slide3.jpg', '/Slider2/Slide4.jpg']
+    const images = ['/Slider2/Slide1.jpg', '/Slider2/Slide2.jpg', '/Slider2/Slide3.jpg', '/Slider2/Slide4.jpg', '/Slider2/Slide5.jpg', '/Slider2/Slide6.jpg', '/Slider2/Slide7.jpg', '/Slider2/Slide8.jpg']
 
     return (
         <Swiper
