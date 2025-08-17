@@ -12,7 +12,7 @@ export default function Animation() {
   return (
     <div className="bg-[#D9D9D9]">
       <div className="px-3 md:px-8 py-12 flex flex-col items-center w-full bg-cover bg-no-repeat bg-[url(/AnimationBg.png)] overflow-hidden">
-        <p className="text-[#B7956F] text-3xl md:text-6xl mb-10">Movie & Animation</p>
+        <p className="text-[#B7956F] text-3xl md:text-6xl mb-10" id='Our%20Projects'>Movie & Animation</p>
         <div className="w-full hidden md:flex flex-wrap justify-center gap-5">
           {posters.map((src, i) => (
             <Image
@@ -59,7 +59,7 @@ export default function Animation() {
       </div>
       <div className='h-[100vh] w-full relative justify-center flex'>
         <div className='w-[95%] 2xl:w-[75%] absolute bottom-1/5 z-30 rounded-4xl md:rounded-[100px] bg-[#9B7A51]/50 opacity-80 py-8 px-8 xl:px-32 text-[#9B7A51] text-4xl text-center gap-16 flex flex-col shadow-2xl pb-40'>
-          <p className='font-bold'>Let's Talk!</p>
+          <p id='Contact%20us'  className='font-bold'>Let's Talk!</p>
           <form action="" className='text-[#1B1B1B] text-lg lg:text-3xl flex flex-col gap-8'>
             <div className='flex flex-col lg:flex-row gap-8'>
               <Link href={'tel:+989120852730'} className='bg-[#9B7A51] rounded-full px-8 py-4 w-full lg:w-1/2 xl:w-1/3 shadow-xl items-center flex flex-row gap-3'>

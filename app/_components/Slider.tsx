@@ -9,6 +9,7 @@ export default function Slider() {
 
     return (
         <Swiper
+            id='Our%20work'
             slidesPerView={2}
             breakpoints={{
                 768: { 
@@ -22,7 +23,7 @@ export default function Slider() {
                 disableOnInteraction: false,
                 pauseOnMouseEnter: false,
             }}
-            allowTouchMove={false}
+            allowTouchMove={true}
             speed={4000}
             loop={true}
             className=" w-full bg-gradient-to-t from-[#DDDDDD] to-white"

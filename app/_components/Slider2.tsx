@@ -22,7 +22,7 @@ export default function Slider2() {
                 disableOnInteraction: false,
                 pauseOnMouseEnter: false,
             }}
-            allowTouchMove={false}
+            allowTouchMove={true}
             speed={4000}
             loop={true}
             className=" w-full bg-[#DDDDDD]" dir='rtl'

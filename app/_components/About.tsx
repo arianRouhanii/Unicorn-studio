@@ -36,7 +36,7 @@ export default function About() {
   return (
     <div className="px-3 md:px-8 py-6 md:pt-30 md:pb-60 flex flex-col bg-[#B7956F] bg-cover bg-no-repeat bg-[url(/AboutBack.png)] text-white items-center w-full overflow-hidden relative">
       <div className="z-20 flex flex-col items-center gap-12 md:gap-30 w-full">
-        <p className="font-bold text-sm xl:text-3xl text-center w-full xl:w-[70%]">
+        <p id='What%20we%20do' className="font-bold text-sm xl:text-3xl text-center w-full xl:w-[70%]">
           A brand is more than the way it looks. We go beyond the visual and bring together all the elements needed to create meaningful brand experiences.
         </p>
 

@@ -11,7 +11,7 @@ export default function Clients() {
         {
             loop: true,
             align: 'start',
-            watchDrag: false 
+            
         },
         [
             AutoScroll({
@@ -28,7 +28,7 @@ export default function Clients() {
 
     return (
         <div className="px-0 md:px-17.5 z-0 gap-2 md:gap-30 flex-col bg-white text-white flex py-12 items-center w-full overflow-hidden relative select-none">
-            <p className="text-[#B7956F] text-3xl md:text-6xl">Clients</p>
+            <p className="text-[#B7956F] text-3xl md:text-6xl" id="Clients">Clients</p>
             <div className="hidden md:flex flex-row flex-wrap justify-between items-center gap-12 pb-40">
                 {images.map((src, index) => (
                     <Image

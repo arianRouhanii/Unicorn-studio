@@ -22,12 +22,13 @@ export default function Start() {
 
     return (
         <Swiper
+            id='Home'
             modules={[Autoplay, Pagination]}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
             loop={true}
             grabCursor={true}
             pagination={{ clickable: true }}
-            className="h-[100vh] w-full"
+            className="h-[350px] md:h-[100vh] w-full"
             onSlideChange={(swiper) => {
                 const realIndex = swiper.realIndex ?? swiper.activeIndex
                 setActiveIndex(realIndex)
@@ -36,7 +37,7 @@ export default function Start() {
             {images.map((src, index) => (
                 <SwiperSlide key={index}>
                     <div
-                        className="h-[100vh] w-full bg-cover bg-center relative"
+                        className=" h-full md:h-[100vh] w-full bg-cover bg-center relative"
                         style={{ backgroundImage: `url(${src})` }}
                     >
                         <div

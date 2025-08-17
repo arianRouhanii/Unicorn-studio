@@ -30,3 +30,6 @@ button{
 *{
   outline: none;
 }
+html {
+  scroll-behavior: smooth;
+}
