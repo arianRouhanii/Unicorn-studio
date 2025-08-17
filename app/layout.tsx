@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Unicorn Studio",
+  title: "Uniqorn Studio",
   description: "Graphic design agency",
 };
 
