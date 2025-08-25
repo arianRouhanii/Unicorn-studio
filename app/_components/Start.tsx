@@ -40,15 +40,6 @@ export default function Start() {
                         className=" h-full md:h-[100vh] w-full bg-cover bg-center relative"
                         style={{ backgroundImage: `url(${src})` }}
                     >
-                        <div
-                            className={`text-white text-4xl md:text-6xl absolute bottom-[15%] md:bottom-[20%] font-bold left-[10%] transform transition-all duration-1000 ease-out
-                                ${activeIndex === index ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}
-                            `}
-                        >
-                            <p className="tracking-tight">GRAPHIC</p>
-                            <p className="tracking-widest">DESIGN</p>
-                            <p className="tracking-wide">AGENCY</p>
-                        </div>
                     </div>
                 </SwiperSlide>
             ))}
